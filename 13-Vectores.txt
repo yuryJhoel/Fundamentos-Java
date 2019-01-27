@@ -1,0 +1,12 @@
+public class Vectores {
+    public static void main(String args[]){
+        String arrayNombres = new String[3];
+        arrayNombres[0] = "juan";
+        arrayNombres[1] = "Pepe";
+        arrayNombres[2] = "Lucho";
+        arrayNombres[3] = "Santiago";
+
+        System.out.println(arrayNombres);
+
+    }
+}

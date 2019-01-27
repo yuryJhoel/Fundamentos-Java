@@ -1,0 +1,21 @@
+public class MatricesBidimensionales2 {
+    public static void main(String args[]){
+        int filas, columnas, contador;
+        filas = 3;
+        columnas = 3;
+        contador = 1;
+        
+        int caja [][] = new int[filas][columnas];
+
+        for(int i= 0; i<filas; i++){
+            for(int j = 0; j < columnas; j++){
+                caja[i][j] = contador;
+                contador++;
+
+                System.out.print(caja[i][j]);
+            }
+            System.out.println("");
+        }
+
+    }
+}
