@@ -1,0 +1,45 @@
+import javax.swing.*;
+import java.awt.event.*;
+
+public class TextFieldtoTextArea extends JFrame implements ActionListener {
+    private JTextField textfield1;
+    private JScrollPane scrollpane1;
+    private JTextArea textarea1;
+    private JButton boton1;
+
+    String texto = "";
+
+    public TextFieldtoTextArea(){
+        setLayout(null);
+        textfield1 = new JTextField();
+        textfield1.setBounds(10,10,200,30);
+        add(textfield1);
+
+        boton1 = new JButton("Agregar");
+        boton1.setBounds(250,10,100,30);
+        add(boton1);
+        boton1.addActionListener(this);
+
+        textarea1 = new JTextArea();
+        scrollpane1 = new JScrollPane(textarea1);
+        scrollpane1.setBounds(10,50,400,300);
+        add(scrollpane1);
+
+    }
+    public void actionPerformed(Action e) {
+        if(e.getSource() == boton1){
+            texto += e.textfield1.getText();
+            System.out.println(texto);
+        }
+    }
+
+    public static void main(String args[]){
+        TextFieldtoTextArea textfieldtotextarea1 = new TextFieldtoTextArea();
+        textfieldtotextarea1.setBounds(0,0,540,400);
+        textfieldtotextarea1.setVisible(true);
+        textfieldtotextarea1.setResizable(false);
+        textfieldtotextarea1.setLocationRelative(null);        
+    }
+
+
+}

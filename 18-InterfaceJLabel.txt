@@ -1,0 +1,27 @@
+import javax.swing.*;
+public class InterfaceJLabel extends JFrame{
+    
+    private JLable label1; 
+    private JLable label2;
+
+    public InterfaceJLable(){
+        setLayout(null);
+        label1 = new JLable("Interfaz Gráfica");
+        label1.setBound(10, 20, 300, 30);
+        add(label1);
+
+        label2 = new JLable("Version 1.0.0");
+        label2 = setBound(10,100, 100,30);
+        add(label2);
+    }
+
+    public static void main(String args[]) {
+        InterfaceJLabel interface1 = new InterfaceJLabel();
+    }
+
+    interface1.setBound(0,0,300,200);
+    interface1.setResizable(false);
+    interface1.setVisible(true);
+    interface1.setLocationRelativeTo(null);
+
+}

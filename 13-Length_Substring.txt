@@ -12,15 +12,10 @@ public class Length_Substring{
         corteInicial = in.nextInt();
         System.out.println("¿Hasta ...? : ");
         corteFinal = in.nextInt();
-        
         cadena.substring(corteInicial, corteFinal);
 
         System.out.println("El ancho de los caracteres que introduciste es: " + cadena.length);
         System.out.println("El texto que deseabas obtener es el siguiente : ");
-
-
-
-
 
     }
 }
